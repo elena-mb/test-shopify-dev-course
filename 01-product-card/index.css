@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    --la-palma: #42940F;
+    --mine-shaft: #2F2F2F;
+    --tundora: #4E4E4E;
+    --verdun-green: #1F5200;
+    --classic-rose: #FDCFF3;
+    --golden-tainoi: #FFCF56;
+}
+
+.products-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.products-section__title {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.products-section__content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20px 60px;
+}
+
+.products-section__product-card {
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: fit-content;
+    max-width: 380px;
+    min-height: 480px;
+    border-radius: 12px;
+    background: no-repeat url(img/orange.png);
+}
+
+.product-card__content {
+    margin: 235px 24px 0;
+    color: var(--mine-shaft);
+}
+
+.product-card__prompts {
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 16px 0 0 16px;
+    max-width: 50vw;
+}
+
+.product-card__prompt {
+    padding: 0 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--mine-shaft);
+    border-radius: 8px;
+}
+
+.product-card__prompt_new {
+    background: var(--classic-rose);
+}
+
+.product-card__prompt_last {
+    background: var(--golden-tainoi);
+}
+
+.product-card__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.product-card__description {
+    font-size: 16px;
+}
+
+.product-card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 24px 23px;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--la-palma);
+    border: 2px solid var(--la-palma);
+    border-radius: 8px;
+    background: white;
+}
+
+.product-card__button:hover {
+    color: white;
+    background: var(--la-palma);
+}
+
+.product-card__button:active {
+    color: white;
+    background: var(--verdun-green);
+}
+
+.product-card__button_disabled,
+.product-card__button_disabled:hover,
+.product-card__button_disabled:active {
+    color: white;
+    background: var(--tundora);
+    border: 1px solid var(--tundora);
+}
